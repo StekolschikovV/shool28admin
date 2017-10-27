@@ -1,0 +1,74 @@
+*{
+ outline: none !important
+}
+.schoolchildren{
+    margin-top: 5px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* background: gold; */
+    /* background: #002a69 */
+}
+.schoolchildren_left{
+    display: flex;
+    align-self:stretch;
+    flex-direction: column;
+}
+.schoolchildren_left_el{
+    width: 200px;
+    background: #0045a5;
+    padding: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    transition:0.5s;
+    border: 0
+}
+.schoolchildren_left_el:hover{
+    background: #013685  
+}
+.schoolchildren_left_el::placeholder{
+    color: white  
+}
+.schoolchildren_left_el.active{
+    transition: 0.5s;
+    color: white;
+    background: #002a69 
+} 
+.schoolchildren_right{
+    flex: 1;
+    padding: 0 50px
+}
+.schoolchildren_right_input{
+    width: calc(33% - 30px);
+    margin-right: 10px;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #0045a5;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    /* max-width: 300px; */
+    transition: 0.5s
+}
+.schoolchildren_right_input:hover, .schoolchildren_right_input:focus{
+    border-bottom: 2px solid #002a69;
+}
+.schoolchildren_right_footer{
+    text-align: right;
+    margin-top: 25px
+}
+.schoolchildren_right_footer_submit {
+    background: #0045a5;
+    border: 0;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s
+}
+.schoolchildren_right_footer_submit:hover {
+    background: #002a69;
+}
+.schoolchildren_left_el_open{
+    background: #002a69 
+}
